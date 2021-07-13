@@ -1,0 +1,42 @@
+﻿@model SE141048_VoQuocHuy_PE.Identity.Professor
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Professor</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.proID)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.proID)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.proName)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.proName)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.employee)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.employee)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.location)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.location)
+        </dd>
+    </dl>
+</div>
+<div>
+    @Html.ActionLink("Edit", "Edit", new {  id = Model.proID }) |
+    <a asp-action="Index">Back to List</a>
+</div>

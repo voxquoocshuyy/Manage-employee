@@ -1,0 +1,53 @@
+﻿@model IEnumerable<SE141048_VoQuocHuy_PE.Identity.Professor>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.proID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.proName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.employee)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.location)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.proID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.proName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.employee)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.location)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.proID }) |
+                @Html.ActionLink("Details", "Details", new { id = item.proID }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.proID })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
