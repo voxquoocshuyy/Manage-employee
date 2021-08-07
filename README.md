@@ -10,7 +10,6 @@ SQL Server 2014 Management Studio <br>
 C# <br>
 SQL <br>
 HTML <br>
-CSS <br>
 ### Implemented technology
 .Net framework <br>
 Bootstrap 4 <br>
